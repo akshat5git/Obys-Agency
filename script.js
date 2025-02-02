@@ -42,7 +42,7 @@ function loader(){
     webcount.textContent = `${count}`;
   },30);
 }
-
+/*
 let tm = gsap.timeline();
 tm.from(".ltitle h1, .ltitle h2" , {
     y: 100,
@@ -106,7 +106,7 @@ gsap.to("#nav-about ,#nav-part2",{
     markers: false,
   }
 
-})
+})*/
 function cursor(){
   let cursor = document.querySelector("#cursor");
   document.addEventListener("mousemove", function (e){
@@ -202,6 +202,7 @@ function sheryanimation(){
 Shery.imageEffect("#img-div",{
   style : 5 ,
   dubug :true,
+
 })
 }
 sheryanimation();
