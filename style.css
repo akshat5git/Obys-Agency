@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;}
+
+.main{
+    background-color: #151515;
+    position: relative;
+    overflow: hidden;
+    
+}
+@font-face {
+    font-family: Plain Light;
+    src: url(Assets/Fonts/plain-light-webfont.ttf);
+}
+@font-face {
+    font-family: Silk Serif;
+    src: url(Assets/Fonts/silk-serif-webfont.ttf);
+}
+#cursor {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+     background-color: transparent;
+    border-radius: 50%;
+    border: 1.3px solid white;
+    transform: translate(-50%, -50%);
+}
+.page{
+    width: 100%;
+    position:relative;
+
+}
+#page1{
+ background-color: #151515;
+    color: white;
+}
+#page2{
+    background-color: #151515;
+    color: white;
+padding: 20vh 0 20vh 0;
+}
+.video-container{
+    width:60vw;
+    height: 70vh;
+    position: relative;
+    left: 40vw;
+
+
+}
+#play-circle{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    position: absolute;
+    left: 600px;
+    top: -80px;
+    background-color: #FFA63D;
+}
+.video-container video{
+    width: 100%;
+    height: 100%;
+
+}
+#video{
+    background-image: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#page3{
+    background-color: #151515;
+    color: white;
+    padding: 9.5vh 0;
+}
+#page3 h1::before{
+    content: "02";
+    font-size: 3.5vw;
+    font-family: "Silk Serif";
+    color: white;
+    position: absolute;
+    left: -9vw;
+    top: 0.9vw;
+}
+#page3 h1{
+    width: 70%;
+    margin: 0 20vw 0 18vw;
+    padding-bottom: 10vh;
+    font-size: 7.5vw;
+    font-family: "Plain Light";
+    position: relative;
+    left: 7vw;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+.project div{
+    display: flex;
+    justify-content: space-between;
+}
+#h1{
+    overflow: hidden;
+}
+.project h2{
+    font-family: plain light;
+}
+.project{
+    width: 20vw;
+
+}
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#img-div{
+    width: 20vw;
+    overflow: hidden;
+    position: relative;
+}
+#loader{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    padding: 15vh 10vw;
+    background-color: #0B0B0B;
+}
+.ltitle{
+    overflow: hidden;
+    height: fit-content;
+}
+.ltitle h2 {
+    color: white;
+    font-size: 6vw;
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px white; 
+    line-height: 95px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+
+}
+.ltitle h1 {
+    color: white;
+    font-size: 6.4vw;
+    line-height: 90px;
+    font-family: "Plain Light";
+}
+#title3 {
+    display: flex;
+    gap: 2vw;
+}
+#loadcount{
+    color: white;
+    font-size: 2.1vw;
+    font-family: "Silk Serif";
+    padding: 1vh 2vw;
+    width: 13vw;
+}
+#loadtitle {
+    display: flex;
+    gap: 4vw;
+}
+@keyframes nowBlink {
+    0%, 45% {
+      opacity: 1;
+      color: transparent;
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px white;
+    }
+    50% {
+      opacity: 0.5;
+      color: white;
+      font-family: "Plain Light";
+      -webkit-text-stroke: 0;
+    }
+    100% {
+      opacity: 1;
+      color: transparent;
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px white;
+    }
+}
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6.5vh 5vw;
+    position: relative;
+}
+#nav-part1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5vw;
+        position: -webkit-sticky;
+        position: sticky;
+
+        top: 0;
+        z-index: 10000;
+}
+#nav-part1 a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.3vh;
+}
+#nav-part2 a{
+        text-decoration: none;
+        color: #D0D0D0;
+        font-size: 2.3vh;
+        font-size: 1vw;
+        margin-left: 2.5vw;
+        font-family: "Roboto Medium";
+        font-weight: 00;
+}
+#nav-about{
+        font-family: "Plain Light";
+        position: absolute;
+        left: 28vw;
+        top: 7vh;
+        font-size: 1vw;
+        line-height: 2.3vh;
+}
+section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 16vh;
+        padding-left: 8vw;
+}
+.fptitle{
+    font-family: 'Plain Light';
+    font-size: 4.8vw;
+    letter-spacing: 2px;
+    line-height: 15vh;
+    overflow: hidden;
+}
+.ulh1{
+        border-bottom: 8px solid white;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+}
+.ulh1:hover{
+        border-width: 0;
+        color: transparent;
+        -webkit-text-stroke: 0.01px white;
+}
+#t1{
+    position: relative;
+    }
+#t1 #s-no{
+        font-family: "Silk Serif";
+        position: absolute;
+        left: -9vw;
+        bottom: 2.5vh;
+        font-size: 3.1vw;
+
+}
+ #scupid{
+        display: flex;
+        gap: .4vw;
+}
+
+#scroll-div{
+        position: absolute;
+        left: 5vw;
+        bottom: 10vh;
+        font-family: "Plain Light";
+        color: #545252;
+        font-weight: bold;
+        font-size: 1vw;
+        overflow: hidden;
+        border: 2px solid #545252;
+}
+#scroll-div p{
+     transform: translateY();
+     animation-name: scrollanime;
+     animation-timing-function: ease-in-out;
+     animation-duration: 2.4s;
+     animation-iteration-count: infinite;
+}
+@keyframes scrollanime {
+         0%{
+            transform: translateY(-16px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(16px);
+        }
+}
