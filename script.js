@@ -185,6 +185,7 @@ currentcursor.innerHTML ='<i class="ri-play-mini-fill"></i>';
     });
   };
 playcursor();
+
 function projectscroll(){
   let title = document.querySelector("#h1 h2");
 title.addEventListener("mouseenter",function(){
@@ -205,4 +206,20 @@ Shery.imageEffect("#img-div",{
 
 })
 }
-sheryanimation();
+//sheryanimation();
+function flaghover(){
+  let flag = document.querySelector("#t3 img")
+   let flagarea = document.querySelector("#t3");
+   flagarea.addEventListener("mousemove", function(details){
+      gsap.to("#t3 img",{
+        top: details.y,
+        left:details.x,
+        opacity :1,
+        duration :.8,
+      })
+   });
+   flagArea.addEventListener("mouseleave", () => {
+    gsap.set(flag, { opacity: 0, visibility: "hidden" }); // Instantly hide the flag
+  });
+}
+flaghover();

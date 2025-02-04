@@ -393,6 +393,16 @@ section{
         font-size: 3.1vw;
 
 }
+#t3 img{
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+    top: 50vh;
+    object-fit: cover;
+    width: 500px;
+    transform: translate(-22vw,-25vw);
+    height: 600px;
+}
  #scupid{
         display: flex;
         gap: .4vw;
